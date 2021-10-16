@@ -253,7 +253,7 @@ ol,ul {
 }
 
 .popup {
-    background: url(img/avatar.png) #FFF bottom center no-repeat;
+    background: url(favicon/guy.png) #FFF bottom center no-repeat;
     border: solid 10px #FFF;
     border-radius: 50%;
     cursor: default;
