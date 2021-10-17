@@ -402,30 +402,6 @@
                     // 	$head.replaceChild(newFavicon,currentFavicon)
                     // }
 
-                    /**
-                     * retourne un élément du tableau aléatoirement
-                     * @param array
-                     * @returns {*}
-                     */
-                    function pickRandomValue(array) {
-                        return array[Math.floor(Math.random() * array.length)];
-                    }
-
-                    /**
-                     * affiche une citation aléatoirement ( que c'est drôle ! )
-                     */
-                    function quotes() {
-                        let quotes = [
-                            "Parse moi tout là dedans, j'suis pas ta mère !",
-                            "C'est un gros gros json ça dis donc !",
-                            "Fucking Json of a bitch"
-                        ]
-                        let container = document.querySelector('#quotes');
-                        container.innerHTML = '<q>' + pickRandomValue(quotes) + '</q>';
-                    }
-
-                    quotes();
-
                     var json = $editor.value;
                     if (trim(json) === '') {
                         $result.innerHTML = '';
