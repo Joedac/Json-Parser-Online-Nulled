@@ -253,7 +253,7 @@ ol,ul {
 }
 
 .popup {
-    background: url(favicon/guy.png) #FFF bottom center no-repeat;
+    background: url(img/guy.png) #FFF bottom center no-repeat;
     border: solid 10px #FFF;
     border-radius: 50%;
     cursor: default;
@@ -484,4 +484,12 @@ li,ol,ul {
 .show-types .boolean::before {
     background-color: #c4a000;
     content: 'boolean'
+}
+
+#quotes {
+    text-align: center;
+    font-size: 18px;
+    font-family: Ubuntu,Arial,sans-serif;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
