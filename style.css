@@ -490,6 +490,12 @@ li,ol,ul {
     text-align: center;
     font-size: 18px;
     font-family: Ubuntu,Arial,sans-serif;
-    padding-bottom: 5px;
-    padding-top: 10px;
 }
+
+@supports (position: sticky) {
+    #quotes {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 999;
+    }}
