@@ -29,6 +29,10 @@ function quotes() {
             author: "Gul"
         },
         {
+            quote: "Parse ta mère sur la Canebière",
+            author: "Gul"
+        },
+        {
             quote: "J'ai une de ces envies de parser",
             author: "Guy"
         },
@@ -49,11 +53,11 @@ function quotes() {
             author: "Sarkoguy"
         },
         {
-            quote: "Achetez le dernier livre d’Eric Guymmour : “Le parser n'a pas dit son dernier mot”",
+            quote: "Achetez le dernier livre d’Eric Guymmour : “Le parseur n'a pas dit son dernier mot”",
             author: "Guy"
         },
         {
-            quote: "Le parser, c'est moi !",
+            quote: "Le parseur, c'est moi !",
             author: "Jean-Guy Mélenchon"
         },
         {
@@ -82,7 +86,7 @@ function quotes() {
         },
         {
             quote: "Enfant de parseur",
-            author: "Guyrome"
+            author: "Guyrome Pierre"
         },
         {
             quote: "J’ai envie de parser des gens",
@@ -95,6 +99,34 @@ function quotes() {
         {
             quote: "Je parsais juste par là et je l'ai suivie",
             author: "Guy Georges"
+        },
+        {
+            quote: "Ca parse comme une lettre à la poste",
+            author: "Anonyme"
+        },
+        {
+            quote: "Parce que nous le parsons bien",
+            author: "L'oréguy"
+        },
+        {
+            quote: "CAR C'EST NOTRE PARSEEEEEEEUUUUUUUUUUURRR",
+            author: "Emmanuel Guycron"
+        },
+        {
+            quote: "Allo maman ? Clauguy à l'appareil ! Dis, je viens de me faire parser.",
+            author: "Clauguy Focan"
+        },
+        {
+            quote: "Eh monsieur Pierre ! Y'a un monsieur très malpoli qu'a téléphoné, il voulait parser Therèse !",
+            author: "Zezette épouse Guy"
+        },
+        {
+            quote: "On peut parser mille fois mille json, non, on peut parser une fois mille json, mais on ne peut pas parser mille fois mille json. Non...",
+            author: "Guy"
+        },
+        {
+            quote: "Il est mignon monsieur JSON, il est méchant monsieur Brochant !",
+            author: "Guy Brochant"
         }
     ]
     let container = document.querySelector('#quotes');
