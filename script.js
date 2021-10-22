@@ -226,7 +226,7 @@
                         snatch.update('<span class="toggle">[</span><ol>');
                         if (snatch.indexOf(']') === 0) {
                             snatch.shift(1);
-                            snatch.update('</ol><span class="toggle-end" card="0">]</span>');
+                            snatch.update('</ol><span class="toggle-end" card="Tableau vide, comme mes couilles">]</span>');
                             return snatch.update('</span>')
                         }
                         snatch = parseElement(snatch, 0);
@@ -236,7 +236,13 @@
                             return snatch.update('</span>')
                         }
                         snatch.shift(1);
-                        snatch.update('</ol><span class="toggle-end" card="' + (io + 1) + '">]</span>');
+
+                        let suffix = ""
+                        if (io > 10) {
+                            suffix = " éléments, il est bien gros ton tableau mon gourmand"
+                        }
+
+                        snatch.update('</ol><span class="toggle-end" card="' + (io + 1) + suffix + '">]</span>');
                         return snatch.update('</span>')
                     }
 
@@ -418,8 +424,17 @@
                             if (result.valid) {
                                 // changeFavicon('valid')
                             } else {
+                                let invalidMessages = [
+                                    "Il y a une erreur de syntaxe connard",
+                                    "Y'a une couille dans le paté mec",
+                                    "T'as chié dans la colle mon gars",
+                                    "Ton json est pété sac à merde",
+                                ]
+                                let invalidMessage = invalidMessages[Math.floor(Math.random() * invalidMessages.length)]
+
+
                                 var nbErrors = result.html.match(/class="error"/g).length;
-                                $status.innerHTML = '<b>Invalid JSON</b> &nbsp; ' + nbErrors + '&nbsp;error' + (nbErrors > 1 ? 's' : '') + '&nbsp;found';
+                                $status.innerHTML = '<b>'+ invalidMessage +'</b> &nbsp; ' + nbErrors + '&nbsp;error' + (nbErrors > 1 ? 's' : '') + '&nbsp;found';
                                 $status.classList.add('status-error');
                                 // changeFavicon('syntax-error')
                             }
