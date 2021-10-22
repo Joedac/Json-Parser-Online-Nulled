@@ -127,11 +127,19 @@ function quotes() {
         {
             quote: "Il est mignon monsieur JSON, il est méchant monsieur Brochant !",
             author: "Guy Brochant"
+        },
+        {
+            quote: "'Cause this is parser, parser night !",
+            author: "Michael Json"
+        },
+        {
+            quote: "Oh...you touch my tra la la... Mmm...my gros json",
+            author: "Guyther"
         }
     ]
     let container = document.querySelector('#quotes');
     let quote = pickRandomValue(quotes);
-    container.innerHTML = '<q>' + quote.quote + '</q>' + ' - ' + quote.author;
+    container.innerHTML = '<span><q>' + quote.quote + '</q>' + ' - ' + quote.author + '</span>';
 }
 
 quotes();
