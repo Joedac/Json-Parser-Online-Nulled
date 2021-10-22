@@ -23,7 +23,6 @@ ol,ul {
     display: none;
     margin: 0 0 0 -4px;
     padding: 0 10px;
-    position: fixed;
     text-align: center;
     top: 0;
     z-index: 10
@@ -37,7 +36,8 @@ ol,ul {
 
 .ui-editor {
     float: left;
-    height: 100%;
+    height: 95%;
+    bottom: 0;
     position: relative;
     width: 50%
 }
@@ -85,7 +85,8 @@ ol,ul {
 
 .ui-aside {
     background: #FFF;
-    height: 100%;
+    height: 95%;
+    bottom: 0;
     overflow: hidden;
     position: relative
 }
@@ -486,16 +487,26 @@ li,ol,ul {
     content: 'boolean'
 }
 
+#header {
+    height: 5%;
+    border-bottom: #dddddd solid thin;
+    display: flex;
+}
+
+#header img {
+    height: 100%;
+    float: left;
+}
+
 #quotes {
+    display: contents;
+    height: 100%;
     text-align: center;
     font-size: 18px;
     font-family: Ubuntu,Arial,sans-serif;
 }
+#quotes span {
+    margin: auto;
+    text-align: center;
+}
 
-@supports (position: sticky) {
-    #quotes {
-        position: sticky;
-        top: 0;
-        background-color: white;
-        z-index: 999;
-    }}
