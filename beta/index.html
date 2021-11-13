@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Guyson Parser Online</title>
+        <meta name="keywords" content="JSON,javascript object notation,parser,parseur,online,tool,free,javascript,tree,treeview,tree view,post,syntax highlighting,парсер,解析器,محلل جسون">
+        <meta name="description" content="Analyze your JSON string as you type thanks to our lovely mate Guy !">
+        <meta name="author" content="Guy">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <link rel="icon" href="favicon/guyicon.png" id="favicon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="beautify">
+    <div id="header">
+        <img src="img/guylogo.png" alt="Gros logo du Guyson parser">
+        <div id="quotes"></div>
+    </div>
+        <div class="ui-editor">
+            <textarea class="ui-field json" id="editor" spellcheck="false" contenteditable="true">{"id":null,"firstname":"Guy","lastname":"Teub","age":51,"hobbies":["1664", "Quechua", "Martine"],"sports":["ping-pong","boule flamande"],"address":{}}</textarea>
+            <div class="ui-resizer"></div>
+        </div>
+        <div class="ui-aside">
+            <div class="ui-notification" id="status"></div>
+            <div class="ui-menu">
+                <div class="ui-menu-dropdown">
+                    <div class="ui-menu-panel">
+                        <div class="ui-menu-item ui-option" id="beautify">Beautify</div>
+                        <div class="ui-menu-item ui-option" id="show-types">Show Types</div>
+                        <div class="ui-menu-item ui-option" id="show-indexes">Show Indexes</div>
+                        <div class="ui-menu-item about">About</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-treeview json" id="result"></div>
+            <div class="ui-searchbar">
+                <div style="position: absolute"></div>
+            </div>
+        </div>
+        <div class="popup-container">
+            <div class="popup-centerer">
+                <div class="popup">
+                    <div class="main">
+                        <div class="title">Guyson parser online</div>
+                        <div class="author">by Guy</div>
+                        <div class="links">
+                             <a class="link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8XHHTPFJG2Q5Y"></a>
+                            <a class="link" id="bitcoin"></a>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <p>please donate to bitcoin address:</p>
+                        <p>
+                            <b>1BRCDcoktxctn8amB58MqvqrpKD63zAp2v</b>
+                        </p>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" async=""></script>
+        <script src="../quotes.js" async=""></script>
+    </body>
+</html>

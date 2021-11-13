@@ -1,65 +1,78 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Guyson Parser Online</title>
-        <meta name="keywords" content="JSON,javascript object notation,parser,parseur,online,tool,free,javascript,tree,treeview,tree view,post,syntax highlighting,парсер,解析器,محلل جسون">
-        <meta name="description" content="Analyze your JSON string as you type thanks to our lovely mate Guy !">
-        <meta name="author" content="Guy">
-        <meta name="viewport" content="width=device-width">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-        <link rel="icon" href="favicon/guyicon.png" id="favicon">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body class="beautify">
-    <div id="header">
-        <img src="img/guylogo.png" alt="Gros logo du Guyson parser">
-        <div id="quotes"></div>
+<head>
+    <meta charset="utf-8"/>
+    <title>Guyson Parser Online</title>
+    <meta name="keywords" content="JSON,javascript object notation,parser,parseur,online,tool,free,javascript,tree,treeview,tree view,post,syntax highlighting,парсер,解析器,محلل جسون"/>
+    <meta name="description" content="Analyze your GUYSON string as you type with an online Javascript parser, featuring tree view and syntax highlighting. Processing is done locally: no data send to server."/>
+    <meta name="author" content="Guy Teub"/>
+    <link rel="icon" href="guyicon.png" id="favicon"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="header" class="a">
+    <img src="guyicon.png" alt="" style="height: 38px;position: absolute;top: 0;left: 20px;">
+    <b>Guyson Parser Online</b>
+    <span id="quotes" style="margin-left: 20px;"></span>
+    <div class="c">
+        <a href="/beta/" class="b" style="color:dodgerblue;font-weight:bold">Try out Beta!</a>
+        <div class="n b">
+            <span class="l">Samples</span><span class="m">▼</span>
+            <div class="j i">
+                <div class="e O" data-json="samples/sequences.json">Math. Sequences</div>
+                <div class="e O" data-json="samples/doe.json">John Do</div>
+                <div class="e O" data-json="samples/types.json">All JS Types</div>
+                <div class="f"></div>
+                <div class="e O" data-json="samples/invalid.json">Invalid JSON Sample</div>
+            </div>
+        </div>
+        <div class="n b">
+            <span class="l">Options</span><span class="m">▼</span>
+            <div class="j g h">
+                <div class="e d" id="yM">Side-by-side</div>
+                <div class="e d" id="xL">Top-bottom</div>
+                <div class="f"></div>
+                <div class="e on" id="gV">Parse Json</div>
+                <div class="e on" id="jY">Eval Json</div>
+                <div class="f"></div>
+                <div class="e" id="zN">Minify</div>
+                <div class="e" id="cR">Colorize</div>
+                <div class="e" id="bQ">Show JS Types</div>
+                <div class="e" id="aP">Show Array Index</div>
+            </div>
+        </div>
     </div>
-        <div class="ui-editor">
-            <textarea class="ui-field json" id="editor" spellcheck="false" contenteditable="true">{"id":null,"firstname":"Guy","lastname":"Teub","age":51,"hobbies":["1664", "Quechua", "Martine"],"sports":["ping-pong","boule flamande"],"address":{}}</textarea>
-            <div class="ui-resizer"></div>
+</div>
+<div id="split" class="N">
+    <textarea class="J x P" id="eT" spellcheck="false"></textarea>
+    <div class="M"></div>
+    <div class="K F" id="fU">
+        <div class="y Q">
+            <div class="C A" id="hW"></div>
+            <div class="C B" id="kZ"></div>
         </div>
-        <div class="ui-aside">
-            <div class="ui-notification" id="status"></div>
-            <div class="ui-menu">
-                <div class="ui-menu-dropdown">
-                    <div class="ui-menu-panel">
-                        <div class="ui-menu-item ui-option" id="beautify">Beautify</div>
-                        <div class="ui-menu-item ui-option" id="show-types">Show Types</div>
-                        <div class="ui-menu-item ui-option" id="show-indexes">Show Indexes</div>
-                        <div class="ui-menu-item about">About</div>
+        <div class="z L">
+            <div class="E" id="dS">
+                <div class="C A">
+                    <div class="w">
+                        <div class="P" id="iX"></div>
                     </div>
                 </div>
-            </div>
-            <div class="ui-treeview json" id="result"></div>
-            <div class="ui-searchbar">
-                <div style="position: absolute"></div>
-            </div>
-        </div>
-        <div class="popup-container">
-            <div class="popup-centerer">
-                <div class="popup">
-                    <div class="main">
-                        <div class="title">Guyson parser online</div>
-                        <div class="author">by Guy</div>
-                        <div class="links">
-                             <a class="link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8XHHTPFJG2Q5Y"></a>
-                            <a class="link" id="bitcoin"></a>
-                        </div>
-                    </div>
-                    <div class="second">
-                        <p>please donate to bitcoin address:</p>
-                        <p>
-                            <b>1BRCDcoktxctn8amB58MqvqrpKD63zAp2v</b>
-                        </p>
-                        <p>
-                        </p>
+                <div class="C B">
+                    <div class="w D">
+                        <div class="P" id="lA"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="script.js" async=""></script>
-        <script src="quotes.js" async=""></script>
-    </body>
+    </div>
+</div>
+<div id="footer" class="r">
+    <div class="q"><span class="o0">Author: Guy Teub</span></div>
+</div>
+<noscript>JavaScript must be enabled in order for you to use <i>Online Json Parser</i>.<br/>It seems JavaScript is either disabled or not supported in your browser.<br/>Enable JavaScript by changing your browser options, then <a href=".">try again</a>.</noscript>
+
+<script src="quotes.js" async=""></script>
+</body>
 </html>
