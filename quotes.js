@@ -160,6 +160,10 @@ function quotes() {
         {
             quote: "Tu peux me parser le sel stp ?",
             author: "Anonyme"
+        },
+        {
+            quote: "Bah parsons !",
+            author: "Eric Guymmour"
         }
     ]
     let container = document.querySelector('#quotes');
