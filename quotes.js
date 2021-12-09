@@ -162,7 +162,7 @@ function quotes() {
             author: "Anonyme"
         },
         {
-            quote: "Bah parsons !",
+            quote: "Ben parsons !",
             author: "Eric Guymmour"
         }
     ]
